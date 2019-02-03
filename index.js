@@ -74,7 +74,10 @@ function placeOrder(cardNumber) {
   // write your code here
   var cardNumbers = cardNumber;
   if (cardNumbers.constructor === Number) {
-    cartTotal = total();
+    var cartTotal = 0;
+    for(var i = 0, len = cart.length; i < len; i++) {
+      cartTotal += cart[i].itemPrice;
+    }
     var cart = [];
     return `Your total cost is $${cartTotal}, which will be charged to the card ${cardNumber}.`;
   }
