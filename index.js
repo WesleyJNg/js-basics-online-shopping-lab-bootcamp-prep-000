@@ -61,6 +61,10 @@ function removeFromCart(item) {
   if(itemInCart === false) {
     return 'That item is not in your cart.';
   }
+  else {
+    i -= 1;
+    
+  }
 }
 
 function placeOrder(cardNumber) {
