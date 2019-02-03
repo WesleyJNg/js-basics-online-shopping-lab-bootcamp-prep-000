@@ -29,7 +29,7 @@ function viewCart() {
       if (i > 1 && i+1 < len) {
         initialPhrase += `, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
-      elif; {
+      else if(len === 1) {
         return initialPhrase + '.';
       }
       else {
