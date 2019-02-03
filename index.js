@@ -32,6 +32,7 @@ function viewCart() {
       else {
         initialPhrase += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
+      i++;
     }
     initialPhrase += '.';
     return initialPhrase;
