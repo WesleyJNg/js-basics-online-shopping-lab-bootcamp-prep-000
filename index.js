@@ -26,7 +26,7 @@ function viewCart() {
     var i = 1, len = cart.length - 1;
     var initialPhrase = `In your cart, you have ${cart[0].itemName} at $${cart[0].itemPrice}`;
     while(i < len) {
-      if (i > 1 && i+1 < len) {
+      if (i >= 1 && i+1 =< len) {
         initialPhrase += `, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
       else if(len === 1) {
