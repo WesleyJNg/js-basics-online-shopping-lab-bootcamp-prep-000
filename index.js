@@ -54,7 +54,7 @@ function removeFromCart(item) {
   // write your code here
   var i = 0, len = cart.length;
   var itemInCart = false;
-  while (i < len || itemInCart === true) {
+  while (i < len || itemInCart === false) {
     itemInCart = item === cart[i].itemName;
     i++;
   }
