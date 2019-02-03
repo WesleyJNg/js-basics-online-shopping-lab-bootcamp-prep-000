@@ -33,9 +33,9 @@ function viewCart() {
         initialPhrase += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
     }
-    initialPhrase += '.';
+    initialPhrase += '.';  return initialPhrase;
+
   }
-  return initialPhrase;
 }
 
 function total() {
