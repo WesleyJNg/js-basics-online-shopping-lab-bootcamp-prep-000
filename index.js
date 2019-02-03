@@ -55,7 +55,7 @@ function removeFromCart(item) {
   var i = 0, len = cart.length;
   var itemInCart = false;
   while (i < len || itemInCart === true) {
-    itemInCart = item in cart[i];
+    itemInCart = item === cart[i].itemName;
     i++;
   }
   if(itemInCart === false) {
