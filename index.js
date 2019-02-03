@@ -33,8 +33,8 @@ function viewCart() {
         initialPhrase += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
       }
     }
-    initialPhrase += '.';  return initialPhrase;
-
+    initialPhrase += '.';
+    return initialPhrase;
   }
 }
 
