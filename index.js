@@ -23,8 +23,10 @@ function viewCart() {
     return 'Your shopping cart is empty';
   }
   else {
-    var initialPhrase = "In your cart, you have ";
-    for(var i = 0, len = cart.length; i < len; i++) {
+    var i = 0, len = cart.length - 1;
+    var initialPhrase = `In your cart, you have ${cart[i].itemName} at
+    
+    while(i < len) {
       
     }
   }
