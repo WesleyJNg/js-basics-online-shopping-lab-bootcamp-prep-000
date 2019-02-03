@@ -24,12 +24,18 @@ function viewCart() {
   }
   else {
     var i = 0, len = cart.length - 1;
-    var initialPhrase = `In your cart, you have ${cart[i].itemName} at
-    
+    var initialPhrase = `In your cart, you have ${cart[i].itemName} at $${cart[i].itemPrice}`;
     while(i < len) {
-      
+      if (i > 1 && i+1 < len) {
+        initialPhrase += `, and ${cart[i].itemName} at $${cart[i].itemPrice}`;
+      }
+      else {
+        initialPhrase += `, ${cart[i].itemName} at $${cart[i].itemPrice}`;
+      }
     }
+    initialPhrase += '.';
   }
+  return initialPhrase;
 }
 
 function total() {
