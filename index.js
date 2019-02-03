@@ -63,7 +63,7 @@ function removeFromCart(item) {
   }
   else {
     i -= 1;
-    cart.slice(i,i+1);
+    cart.slice(i,i);
     return cart;
   }
 }
